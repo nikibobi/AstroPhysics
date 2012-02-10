@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6909D34B-E38F-483B-B178-CF542B1F33E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AstroPhysics</RootNamespace>
+    <AssemblyName>AstroPhysics</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\world.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Astronomy\Orbit.cs" />
+    <Compile Include="Astronomy\PlanetFactory.cs" />
+    <Compile Include="Astronomy\PlanetInfo.cs" />
+    <Compile Include="Astronomy\PlanetInfoPresets.cs" />
+    <Compile Include="HelpForm\HelperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm\HelperForm.Designer.cs">
+      <DependentUpon>HelperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectEnergy\Convertor.cs" />
+    <Compile Include="ObjectEnergy\EnegryGraphic\EnergyChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectEnergy\EnegryGraphic\EnergyChart.Designer.cs">
+      <DependentUpon>EnergyChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectEnergy\EnegryGraphic\GraphLine.cs" />
+    <Compile Include="ObjectEnergy\EnegryGraphic\GraphArea.cs" />
+    <Compile Include="ObjectEnergy\Force.cs" />
+    <Compile Include="ObjectEnergy\IForceable.cs" />
+    <Compile Include="ObjectEnergy\Material.cs" />
+    <Compile Include="ObjectEnergy\Vector.cs" />
+    <Compile Include="Particles\-Particle.cs" />
+    <Compile Include="Particles\-Trail.cs" />
+    <Compile Include="ValueCalculator\Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValueCalculator\Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValueCalculator\-DoubleParser.cs" />
+    <Compile Include="ValueCalculator\Units.cs" />
+    <Compile Include="ValueCalculator\UnitsArray.cs" />
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectEnergy\MechanicEnergy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectEnergy\MechanicEnergy.Designer.cs">
+      <DependentUpon>MechanicEnergy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectEnergy\Object.cs" />
+    <Compile Include="Astronomy\Planet.cs" />
+    <Compile Include="AstroPhysics.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Astronomy\SolarSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Astronomy\SolarSystem.Designer.cs">
+      <DependentUpon>SolarSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValueCalculator\Stats.cs" />
+    <Compile Include="Astronomy\StarSystem.cs" />
+    <Compile Include="Astronomy\StarSystemPresets.cs" />
+    <Compile Include="Astronomy\Univerce.cs" />
+    <EmbeddedResource Include="HelpForm\HelperForm.resx">
+      <DependentUpon>HelperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectEnergy\EnegryGraphic\EnergyChart.resx">
+      <DependentUpon>EnergyChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValueCalculator\Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectEnergy\MechanicEnergy.resx">
+      <DependentUpon>MechanicEnergy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Astronomy\SolarSystem.resx">
+      <DependentUpon>SolarSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cherry Blossom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun__.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neptune_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uranus_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saturn_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mars_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venus_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercury_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Space.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CG 3D Animation PC Background blue moon smile sky  star wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Physics_BG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball_Move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orbit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptimisticOrbit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fastforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MouseOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MouseOver2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlanetInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phobos1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proteus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Triton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nereid1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titania1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Umbriel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oberon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miranda1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ariel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rhea1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dione1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tethys1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iapetus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mimas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hyperion1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phoebe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enceladus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Callisto1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ganymede1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Io1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Europa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deimos1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neptune1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uranus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saturn1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mars1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercury1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sun1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Umbriel_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Triton_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titania_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titan_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tethys_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rhea_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phoebe_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phobos_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oberon_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moon_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miranda_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mimas_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Io_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iapetus_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ganymede_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Europa_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enceladus_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dione_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deimos_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Callisto_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ariel_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nereid_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proteus_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deimos_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Umbriel_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Triton_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titan_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tethys_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rhea_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enceladus_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Europa_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ganymede_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iapetus_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Io_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mimas_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miranda_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Moon_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oberon_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phobos_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phoebe_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titania_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ariel_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Callisto_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dione_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hyperion_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neptune.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jupiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uranus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saturn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercury.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MechanicEnergy_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoFinal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
