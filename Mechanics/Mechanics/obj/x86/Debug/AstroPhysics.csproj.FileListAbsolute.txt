@@ -1,0 +1,12 @@
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.Properties.Resources.resources
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\bin\Debug\AstroPhysics.exe
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\bin\Debug\AstroPhysics.pdb
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.Calculator.resources
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.Form1.resources
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.MechanicEnergy.resources
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.SolarSystem.resources
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.exe
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.pdb

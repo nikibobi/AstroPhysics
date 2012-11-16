@@ -1,0 +1,12 @@
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\bin\Debug\Mechanics.exe
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\bin\Debug\Mechanics.pdb
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\Mechanics.Calculator.resources
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\Mechanics.Form1.resources
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\Mechanics.Properties.Resources.resources
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\Mechanics.exe
+c:\documents and settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\Mechanics.pdb
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\Mechanics.MechanicEnergy.resources
+C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\Mechanics.SolarSystem.resources

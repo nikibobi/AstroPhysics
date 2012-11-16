@@ -10,3 +10,23 @@ C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanic
 C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.SolarSystem.resources
 C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.exe
 C:\Documents and Settings\user\my documents\visual studio 2010\Projects\Mechanics\Mechanics\obj\x86\Debug\AstroPhysics.pdb
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\bin\Debug\AstroPhysics.exe.config
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.csproj.ResolveComReference.cache
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.exe
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.pdb
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\bin\Debug\AstroPhysics.exe
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\bin\Debug\AstroPhysics.pdb
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.HelpForm.HelperForm.resources
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.ObjectEnergy.EnergyChart.resources
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.ValueCalculator.Calculator.resources
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.FormMenu.resources
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.ObjectEnergy.MechanicEnergy.resources
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.Properties.Resources.resources
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\AstroPhysics.Astronomy.SolarSystem.resources
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\user\My Documents\GitHub\AstroPhysics\Mechanics\obj\x86\Debug\GenerateResource.write.1.tlog
